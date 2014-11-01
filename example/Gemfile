@@ -1,0 +1,6 @@
+source "https://rubygems.org"
+
+gem "mysql2"
+gem "mysql2-metrics", path: '../'
+gem 'pry'
+gem 'pry-nav'

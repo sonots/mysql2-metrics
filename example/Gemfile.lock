@@ -1,0 +1,28 @@
+PATH
+  remote: ../
+  specs:
+    mysql2-metrics (0.0.1)
+      mysql2
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    coderay (1.1.0)
+    method_source (0.8.2)
+    mysql2 (0.3.16)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry-nav (0.2.4)
+      pry (>= 0.9.10, < 0.11.0)
+    slop (3.6.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  mysql2
+  mysql2-metrics!
+  pry
+  pry-nav
