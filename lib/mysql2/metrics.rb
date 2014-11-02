@@ -42,6 +42,11 @@ end
 # open class
 module Mysql2
   class Client
-    ::Mysql2::Metrics.add_tracer :query
+    # mysql2-cs-bind
+    if method_defined?(:xquery)
+      ::Mysql2::Metrics.add_tracer :xquery
+    else
+      ::Mysql2::Metrics.add_tracer :query
+    end
   end
 end
